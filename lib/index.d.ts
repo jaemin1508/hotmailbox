@@ -2,7 +2,7 @@ import IStockData from "./interfaces/StockData";
 import ITransaction from "./interfaces/Transaction";
 import { IMailCode } from "./interfaces/Mail";
 import IVerificationCode from "./interfaces/VerificationCode";
-export default class API {
+export declare class API {
     apikey: string;
     language: string;
     constructor(apikey: string, language?: string);

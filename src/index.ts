@@ -10,7 +10,7 @@ const axios = Axios.create({
     timeout: 10000,
 });
 
-export default class API {
+export class API {
     apikey: string = "";
     language: string = "en";
     
@@ -87,7 +87,8 @@ export const getMailCode = async (platform: "facebook" | "twitter" | "discord" |
             password,
             lang,
             timeout
-        }
+        },
+        timeout: (timeout || 60) * 1000
     });
 
     if (status !== 200) {
