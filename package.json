@@ -1,0 +1,23 @@
+{
+  "name": "hotmailbox",
+  "version": "1.0.0",
+  "description": "An unofficial node.js wrapper for hotmailbox.me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaemin1508/hotmailbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaemin1508/hotmailbox/issues"
+  },
+  "homepage": "https://github.com/jaemin1508/hotmailbox#readme",
+  "dependencies": {
+    "axios": "^1.2.4"
+  }
+}
