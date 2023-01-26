@@ -2,8 +2,8 @@
   "name": "hotmailbox",
   "version": "1.0.2",
   "description": "An unofficial node.js wrapper for hotmailbox.me",
-  "main": "lib/index.js",
-  "types": "lib",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
