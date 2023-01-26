@@ -1,6 +1,6 @@
 {
   "name": "hotmailbox",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An unofficial node.js wrapper for hotmailbox.me",
   "main": "index.js",
   "types": "index.d.ts",
