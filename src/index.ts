@@ -1,9 +1,5 @@
 import Axios from "axios";
-import IAPIError from "./interfaces/APIError";
-import IStockData from "./interfaces/StockData";
-import ITransaction from "./interfaces/Transaction";
-import { IMailCode } from "./interfaces/Mail";
-import IVerificationCode from "./interfaces/VerificationCode";
+import { IAPIError, IStockData, ITransaction, IMailCode, IVerificationCode } from "./interfaces";
 
 const axios = Axios.create({
     baseURL: "https://api.hotmailbox.me",
@@ -16,6 +12,7 @@ export class API {
     
     constructor(apikey: string, language: string = "en") {
         this.apikey = apikey;
+        this.language = language;
     }
 
     async getStock(): Promise<IStockData[]> {
@@ -55,7 +52,7 @@ export class API {
      * @param currency "vnd" or "usd"
      * @returns number
      */
-    async checkBalance(currency: "vnd" | "usd" | "VND" | "USD" | undefined): Promise<number> {
+    async checkBalance(currency?: "vnd" | "usd" | "VND" | "USD"): Promise<number> {
         const { status, data } = await axios.get('user/balance', {
             params: {
                 apikey: this.apikey
